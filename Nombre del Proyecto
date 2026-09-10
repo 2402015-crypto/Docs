@@ -101,3 +101,16 @@ Ejemplos:
 * Procure que el título refleje de forma resumida el alcance real del trabajo.
 
 Un buen título debe permitir comprender de inmediato qué se hará, cómo se realizará, para qué se hará y dónde se aplicará.
+
+Nombre:
+Implementación de una plataforma web para la gestión de inventario de equipos
+electrónicos mediante tecnologías web y códigos QR para mejorar el control y 
+seguimiento de activos en el Hotel Chablé Maroma.
+
+Doc. Levantamiento de requerimientos:
+Lista completa de equipos que se inventariarán.
+Datos técnicos que se almacenarán por cada equipo.
+Flujo actual de inventario.
+Usuarios que usarán el sistema.
+Información del servidor.
+Diseño preliminar de la base de datos.
