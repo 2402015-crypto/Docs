@@ -102,11 +102,18 @@ Ejemplos:
 
 Un buen título debe permitir comprender de inmediato qué se hará, cómo se realizará, para qué se hará y dónde se aplicará.
 
+===========================================================================================================================
+NOTAS PARA INCLUIR EN MEMORIA
 Nombre:
 Implementación de una plataforma web para la gestión de inventario de equipos
 electrónicos mediante tecnologías web y códigos QR para mejorar el control y 
 seguimiento de activos en el Hotel Chablé Maroma.
+Evidencias:
+1. Se realizaron pruebas de reconocimiento mediante visión artificial utilizando OpenCV y EasyOCR. Los resultados demostraron
+la capacidad del sistema para identificar matrículas vehiculares tanto en capturas cercanas como en imágenes donde el vehículo
+aparece completo, permitiendo establecer una base para la automatización del proceso de registro de acceso.
 
+DOCUMENTACIÓN
 Doc. Levantamiento de requerimientos:
 Lista completa de equipos que se inventariarán.
 Datos técnicos que se almacenarán por cada equipo.
@@ -114,3 +121,28 @@ Flujo actual de inventario.
 Usuarios que usarán el sistema.
 Información del servidor.
 Diseño preliminar de la base de datos.
+
+MODULOS V1.0
+Login
+
+Dashboard
+
+Registro de Entrada
+
+Registro de Salida
+
+Vehículos Activos
+
+Historial
+
+Evidencias Fotográficas
+
+Vehículos Frecuentes
+
+Estadísticas
+
+Configuración OCR
+
+Usuarios
+
+Bitácora
