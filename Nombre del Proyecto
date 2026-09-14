@@ -113,6 +113,14 @@ Evidencias:
 la capacidad del sistema para identificar matrículas vehiculares tanto en capturas cercanas como en imágenes donde el vehículo
 aparece completo, permitiendo establecer una base para la automatización del proceso de registro de acceso.
 
+Cambio a FastALPR:
+Se realizaron pruebas de reconocimiento sobre 11 imágenes de vehículos con placas mexicanas utilizando FastALPR.
+
+El sistema logró detectar correctamente la región de la placa y recuperar la información alfanumérica en las 11 imágenes
+evaluadas, obteniendo una tasa de detección observada del 100% para la muestra utilizada.
+Asimismo, se observó una reducción significativa en los tiempos de procesamiento respecto a la solución previamente
+implementada mediante OpenCV y EasyOCR.
+
 DOCUMENTACIÓN
 Doc. Levantamiento de requerimientos:
 Lista completa de equipos que se inventariarán.
