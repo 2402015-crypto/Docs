@@ -1,0 +1,114 @@
+Instalacion:
+OpenCV + EasyOCR      (Actual)
+           VS
+YOLO/FastALPR + EasyOCR (Prueba)
+
+Crea una carpeta nueva:
+
+OCR-Test-YOLO
+│
+├── imagenes/
+│   ├── pl.jpg
+│   ├── pl2.jpg
+│   ├── honda.jpg
+│   └── jetta.jpg
+│
+├── detector.py
+└── requirements.txt
+
+Fase 2: Crear entorno virtual
+
+Dentro de la carpeta:
+
+python -m venv venv
+
+
+Activar:
+
+venv\Scripts\activate
+
+Fase 3: Instalar dependencias
+
+Usaremos YOLOv8 y EasyOCR.
+
+pip install ultralytics
+
+pip install easyocr
+
+pip install opencv-python
+
+pip install pillow
+
+pip install numpy
+
+
+Fase 4: Descargar modelo de placas
+
+Vamos a usar un modelo ya entrenado para detectar placas.
+
+Puedes empezar con alguno de los modelos del ecosistema de
+fast-alpr o con un detector YOLOv8 de placas. 
+El objetivo de la prueba es únicamente detectar la región
+de la matrícula.
+
+Fase 5: Script de prueba
+
+Guarda como:
+from ultralytics import YOLO
+import cv2
+import easyocr
+import os
+model = YOLO("best.pt")
+reader = easyocr.Reader(['en'])
+carpeta = "imagenes"
+for archivo in os.listdir(carpeta):
+    ruta = os.path.join(carpeta, archivo)
+    print("\n" + "="*50)
+    print("Procesando:", archivo)
+    img = cv2.imread(ruta)
+    resultados = model(img)
+    encontrado = False
+    for r in resultados:
+        boxes = r.boxes
+        for box in boxes:
+            x1, y1, x2, y2 = map(
+                int,
+                box.xyxy[0]
+            )
+            roi = img[
+                y1:y2,
+                x1:x2
+            ]
+            texto = reader.readtext(roi)
+            print("\nResultado OCR:")
+            for t in texto:
+                print(t[1])
+            encontrado = True
+    if not encontrado:
+        print(
+            "No se detectó región"
+        )
+
+Vue
+↓
+Spring Boot
+↓
+Servicio OCR Python
+
+Dentro del OCR:
+
+YOLO
+↓
+Recorte
+
+EasyOCR
+↓
+Texto
+
+Patrones
+↓
+Score
+
+Resultado
+
+Si la respuesta a la mayoría es sí, entonces valdrá la pena migrar de OpenCV a un detector tipo YOLO/FastALPR. Con las imágenes que ya me mostraste, sospecho que sí habrá una mejora importante, especialmente en placas pequeñas o con vehículos completos.
