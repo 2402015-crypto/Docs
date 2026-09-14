@@ -105,9 +105,8 @@ Un buen título debe permitir comprender de inmediato qué se hará, cómo se re
 ===========================================================================================================================
 NOTAS PARA INCLUIR EN MEMORIA
 Nombre:
-Implementación de una plataforma web para la gestión de inventario de equipos
-electrónicos mediante tecnologías web y códigos QR para mejorar el control y 
-seguimiento de activos en el Hotel Chablé Maroma.
+Desarrollo de un sistema de control de acceso vehicular mediante reconocimiento automático de placas para optimizar el registro
+y seguimiento de vehículos en el Hotel Chablé Maroma.
 Evidencias:
 1. Se realizaron pruebas de reconocimiento mediante visión artificial utilizando OpenCV y EasyOCR. Los resultados demostraron
 la capacidad del sistema para identificar matrículas vehiculares tanto en capturas cercanas como en imágenes donde el vehículo
