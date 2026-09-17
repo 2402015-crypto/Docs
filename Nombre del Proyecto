@@ -121,14 +121,6 @@ Asimismo, se observó una reducción significativa en los tiempos de procesamien
 implementada mediante OpenCV y EasyOCR.
 
 DOCUMENTACIÓN
-Doc. Levantamiento de requerimientos:
-Lista completa de equipos que se inventariarán.
-Datos técnicos que se almacenarán por cada equipo.
-Flujo actual de inventario.
-Usuarios que usarán el sistema.
-Información del servidor.
-Diseño preliminar de la base de datos.
-
 MODULOS V1.0
 Login
 
