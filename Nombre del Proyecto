@@ -158,3 +158,4 @@ Bitácora
 https://markdownpastebin.com/?id=9583831663d94400a3c0b6d15f84b3a9
 
 https://github.com/jvanderborght/publisher_to_pptx
+pip install -r requirements.txt      
